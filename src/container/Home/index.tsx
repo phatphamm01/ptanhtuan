@@ -235,7 +235,7 @@ const Home = () => {
       editable: true,
       sorter: (a: any, b: any) => a.priceIn - b.priceIn,
       render: (_: any, record: Item) => {
-        return <span>{numberToMoney(Number(record.priceIn))}</span>;
+        return <span>{record.priceIn}</span>;
       },
     },
     {
@@ -245,7 +245,7 @@ const Home = () => {
       editable: true,
       sorter: (a: any, b: any) => a.priceOut - b.priceOut,
       render: (_: any, record: Item) => {
-        return <span>{numberToMoney(Number(record.priceOut))}</span>;
+        return <span>{record.priceOut}</span>;
       },
     },
     {
